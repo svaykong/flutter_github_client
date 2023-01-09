@@ -1,16 +1,25 @@
 # github_client
 
-A new Flutter project.
+A new Flutter desktop project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- flutter config --enable-macos-desktop
+- flutter create github_client
+- cd github_client
+- rm -r android ios web
+- flutter run
+- git init
+- git add .
+- git commit -m "My First Commit"
+- git add remote origin git@github.com:username/repo.git
+- git branch -M main
+- git push -u origin main
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### If ssh not config
+- cd ~/.ssh
+- ssh-keygen
+- cat id_rsa.pub
+- cat ~/.ssh/id_rsa.pub | pbcopy
+- Add to github.com
+- ssh -T git@github.com
